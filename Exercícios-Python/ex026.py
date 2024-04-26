@@ -1,0 +1,6 @@
+palavra = str(input('Digide uma frase: '))
+palavra = palavra.strip().upper()
+cont = palavra.count('A')
+primeiro = int(palavra.find('A'))
+ultimo = int(palavra.rfind('A'))
+print(f'Na sua frase aparece a letra "A" {cont} vezes sendo a primeira na posição {primeiro + 1} e o último na posição {ultimo + 1}')

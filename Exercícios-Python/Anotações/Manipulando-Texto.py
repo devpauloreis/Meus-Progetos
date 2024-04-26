@@ -89,4 +89,6 @@ Para quando eu quiser retirar um caractere dentro de uma palavra em uma lista
 
 DICA
 print("""Tudo o que for escrito aqui vai ser mostrado no terminal como um único texto""")
+
+lista.pop() mostra somente o último elemento da lista
 '''
