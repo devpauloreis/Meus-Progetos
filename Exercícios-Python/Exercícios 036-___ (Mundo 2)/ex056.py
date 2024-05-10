@@ -6,9 +6,10 @@ maisvelho = ' '
 menos = 0
 idades = 0
 for c in range(0, 4):
-    nome = input(f'Qual o nome da pessoa {c+1}? ')
-    idade = int(input(f'Qual a idade da pessoa {c+1}? '))
-    sexo = input(f'Qual o sexo da pessoa {c+1}? [M/F] ')
+    print(f'----- {c+1}ª PESSOA -----')
+    nome = input('Nome: ')
+    idade = int(input('Idade: '))
+    sexo = input('Sexo [M/F]: ')
     idades += idade
     if sexo == 'M':
         if idade > maior:
@@ -18,6 +19,6 @@ for c in range(0, 4):
         if idade < 21:
             menos += 1
 m = idades // 4
-print(f'A média de idade do grupo é {m}. \n'
+print(f'A média de idade do grupo é {m} \n'
       f'O nome do homem mais velho é {maisvelho}. \n'
       f'A quantidade de mulheres com menos de 21 anos é {menos}')

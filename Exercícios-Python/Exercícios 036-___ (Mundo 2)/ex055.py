@@ -6,5 +6,5 @@ for c in range(0, 5):
         maior = peso
     if menor > peso:
         menor = peso
-
-print(f'O maior peso lido foi {maior} e o menor foi {menor}.')
+print(f'O maior peso lido foi de {maior}Kg\n'
+      f'O menor peso lido foi de {menor}Kg')
