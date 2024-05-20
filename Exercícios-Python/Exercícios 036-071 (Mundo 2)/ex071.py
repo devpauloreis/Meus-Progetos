@@ -1,6 +1,6 @@
-print('===============================')
-print('           BANCO CEV          ')
-print('===============================')
+print(f'{'=':=^30}')
+print(f'{' BANCO CEV ':^30}')
+print(f'{'=':=^30}')
 valor = int(input('Que valor você quer sacar? R$'))
 c50 = valor // 50
 sobra = valor - c50*50

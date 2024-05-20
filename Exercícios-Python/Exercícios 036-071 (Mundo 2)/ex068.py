@@ -6,9 +6,11 @@ c = 0
 b = 0
 while True:
     escolhajg = int(input('Diga um valor: '))
-    player = input('Par ou ímpar? [P/I] ').strip().upper()
+    player = ''
     escolhapc = randint(0,10)
     soma = escolhajg + escolhapc
+    while player not in ['P', 'I']:
+        player = str(input('Par ou ímpar? [P/I] ').strip().upper())
     print('----------------------------------')
     if soma % 2 == 0:
         print(f'Você jogou {escolhajg} e o computador jogou {escolhapc}. Total DEU PAR ')
@@ -17,10 +19,12 @@ while True:
         print(f'Você jogou {escolhajg} e o computador jogou {escolhapc}. Total DEU ÍMPAR ')
         print('----------------------------------')
     if player == 'P' and soma % 2 == 0:
-        print('Você GANHOU!')
+        print('Você GANHOU! \n'
+              'Vamos jogar novamente... ')
         c += 1
     elif player == 'I' and soma % 2 == 1:
-        print('Você GANHOU!')
+        print('Você GANHOU! \n'
+              'Vamos jogar novamente... ')
         c += 1
     elif player == 'P' and soma % 2 == 1:
         print('Você PERDEU!')
