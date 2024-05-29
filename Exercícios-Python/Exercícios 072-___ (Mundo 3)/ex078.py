@@ -11,7 +11,7 @@ for c, p in enumerate(lista):
 print(f'A lista ficou: {lista}')
 print(f'O maior valor informado foi {max(lista)} na posição ', end= '')
 for c in posmax:
-    print(f'{c}...', end= '')
+    print(f'{c}... ', end= '')
 print('')
 print(f'O menor valor informado foi {min(lista)} na posição ', end= '')
 for c in posmin:
